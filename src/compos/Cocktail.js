@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Cocktail.css";
+import { motion } from "framer-motion";
 const Cocktail = ({ cocktail }) => {
   const {
     idDrink,
@@ -15,13 +16,12 @@ const Cocktail = ({ cocktail }) => {
   } = cocktail;
   return (
     <div className="col-md-4 m-auto">
-      <div className="cocktailCard">
+      <motion.div className="cocktailCard" layout whileHover={{ scale: 1.05 }}>
         <div className="img-wrapper">
-          <div className="img">
-            <Link to={`/cocktails/${idDrink}`} className="details">
-              details
-            </Link>
-          </div>
+          <Link to={`/cocktails/${idDrink}`} className="overlay">
+            <span className="details">details</span>
+          </Link>
+
           <img src={strDrinkThumb} alt={strDrink} />
         </div>
 
@@ -36,7 +36,7 @@ const Cocktail = ({ cocktail }) => {
           <span>{strIngredient3}</span>
           <span>{strIngredient4}</span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

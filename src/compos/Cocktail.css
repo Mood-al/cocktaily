@@ -11,7 +11,7 @@
     border-radius: 10px;
     overflow: hidden;
     font-family: var(--mainFont);
-    
+    z-index: 9999;
 }
 .cocktailCardContent{
     margin-top: 10px;
@@ -43,26 +43,44 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
     /* transition: ease-in-out 1s all; */
- 
+    
 }
 .details{
     color:var(--white);
     background: var(--blue);
-    padding: 5px 20px;
+    padding: 0px 20px;
     border-radius: 20px;
-    opacity: 0;
+   
     /* display: block; */
     transition: 0.5s all ease-in-out;
+  
     
 }
-.img:hover .details{
+.overlay{
+    width: 100%;
+    height: 100%;
+   
+    background: rgba(0,0,0,0.4);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    
+
+}
+.overlay:hover {
     opacity: 1;
     color:var(--white)
 }

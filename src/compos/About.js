@@ -15,7 +15,7 @@ const About = () => {
         </span>
       </p>
 
-      <h3>you can visit my website by clicking on logo</h3>
+      <h3>you can visit my website by clicking on the logo</h3>
       <div className="logo2">
         <a
           href="https://9mooder7.netlify.app/"
@@ -71,6 +71,17 @@ const About = () => {
           </svg>
         </a>
       </div>
+      <h5>
+        if you want to watch the githup repo of this app click here{" "}
+        <a
+          href="https://github.com/Mood-al/cocktaily"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          <i className="fab fa-github fa-2x"></i>{" "}
+        </a>
+      </h5>
     </div>
   );
 };

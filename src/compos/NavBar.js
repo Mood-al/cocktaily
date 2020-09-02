@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import SearchInput from "./SearchInput";
 const NavBar = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
   const navHandeler = (e) => {
     setNav((prevNav) => !prevNav);
   };
-  console.log(nav);
+
   return (
     <nav className="my-nav">
       <Link className="logo" to="/">
