@@ -1,0 +1,31 @@
+.about p{
+    font-size: 20px;
+    color: var(--black);
+
+    margin-top: 20px;
+}
+.about{
+    text-align: center;
+}
+.about h1{
+    color: var(--red);
+    text-align: center;
+    
+}
+.about a{
+    color: var(--red);
+}
+.cls-1{
+    fill:var(--black);
+  }
+  .cls-2{
+    fill:none;stroke:var(--red);stroke-miterlimit:10;stroke-width:3px;
+  }
+.logo2{
+    width: 60%;
+    margin:30px auto;
+}
+.about h3{
+  margin-top: 70px;
+    
+}

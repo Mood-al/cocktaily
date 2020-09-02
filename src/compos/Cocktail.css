@@ -1,0 +1,68 @@
+.cocktailCard img{
+    width: 100%;
+    border-radius:5px;
+    cursor: pointer;
+   
+}
+.cocktailCard{
+    background: var(--white);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--mainFont);
+    
+}
+.cocktailCardContent{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.cocktailCard p {
+    font-family: var(--secondFont);
+    
+}
+.badges{
+    width: 100%;
+}
+.badges span{
+    font-size: 12px;
+    margin-left: 10px;
+    background: var(--red);
+    border-radius: 20px;
+    color:var(--white);
+    padding: 1px 5px;
+    display: inline-block;
+    font-family: var(--secondFont);
+
+}
+.img-wrapper{
+    position: relative;
+   
+}
+.img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* transition: ease-in-out 1s all; */
+ 
+}
+.details{
+    color:var(--white);
+    background: var(--blue);
+    padding: 5px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    /* display: block; */
+    transition: 0.5s all ease-in-out;
+    
+}
+.img:hover .details{
+    opacity: 1;
+    color:var(--white)
+}
