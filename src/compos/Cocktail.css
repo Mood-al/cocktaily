@@ -59,7 +59,6 @@
     border-radius: 20px;
    
     /* display: block; */
-    transition: 0.5s all ease-in-out;
   
     
 }
@@ -77,6 +76,7 @@
     right: 0;
     bottom: 0;
     opacity: 0;
+    transition: 0.5s all ease-in-out;
     
 
 }
